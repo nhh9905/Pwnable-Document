@@ -67,12 +67,13 @@ Example: a -> '/bin/sh', trong đó `a` là 1 địa chỉ hợp lệ
 %p -> leak a
 
 ## Integer Overflow
-Example: Integer range: -2^31 -> 2^31 - 1
--2147483648 -> 2147483647
+Integer range: -2<sup>31</sup> -> 2<sup>31</sup> - 1
+> Mẹo để nhớ: int 4 bytes -> 32 bits
 
-Input: 
+Example: Input: 
 - 2147483648 -> -2147483648
 - 2147483649 -> -2147483647
+- ...
 
 ## Heap Exploitation
 - Heap là vùng nhớ được cấp phát động, trong đó: 
